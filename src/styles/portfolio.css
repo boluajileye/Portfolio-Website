@@ -1,0 +1,171 @@
+
+#portfolio {
+	padding-bottom: 1px;
+	text-align: center;
+	position: relative;
+}
+
+#portfolio h2 {
+	color: blueviolet;
+	margin-bottom: 40px;
+}
+
+#portfolio h2:after {
+	border-bottom: 2px dashed #b4b4b4;
+}
+
+#portfolio .row {
+	margin: 0px;
+	box-sizing: border-box;
+	padding: 0 60px;
+}
+
+#portfolio .heading {
+	color: #F0F0F0;
+	padding: 15px;
+	text-align: center;
+	position: absolute;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+#portfolio .heading span {
+	color: blueviolet;
+	display: block;
+	margin: 40px 0px;
+	font-size: 200%;
+}
+
+#portfolio .description {
+	position: absolute;
+	left: 5%;
+}
+
+#portfolio .description > * {
+	display: none;
+	font-size: 72%;
+}
+
+#portfolio p {
+	color: #F0F0F0;
+	/*display: none;*/
+	margin-bottom: 30px;
+	line-height: 230%;
+}
+
+#portfolio p, .tools {
+	width: 100%;
+}
+
+.description span {
+	margin-left: 10px;
+}
+
+.description .tools {
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.description .tools li {
+	margin-top: 5px;
+	background-color: #114190;
+	margin-right: 10px;
+	padding: 10px;
+	color: #F0F0F0;
+}
+
+#portfolio div section {
+	cursor: pointer;
+}
+
+#portfolio div:nth-child(odd) section {
+	background-color: blueviolet;
+	padding: 10px;
+	border: 3px solid blueviolet;
+}
+
+#portfolio div:nth-child(even) section {
+	background-color: blueviolet;
+	padding: 10px;
+	border: 3px solid blueviolet;
+}
+
+#portfolio img {
+	width: 100%;
+}
+
+#portfolio section {
+	height: 100%;
+	margin: 20px;
+}
+
+#portfolio .overlay {
+	position: relative;
+	padding-bottom: 0px;
+	min-height: 550px;
+  overflow: auto;
+}
+
+#portfolio .description h4 {
+	color: white;
+}
+
+#portfolio .heading {
+	position: relative;
+	margin: 0 auto;
+}
+
+#portfolio section {
+	width: 30%;
+	float: left;
+}
+.button{
+	background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+#portfolio section:hover .overlay img {
+	opacity: 0;
+	transition: opacity .32s;
+}
+
+#portfolio section:hover .description {
+	top: 40px;
+	transition: top .5s;
+}
+
+#portfolio section:hover .overlay .heading span {
+	 -webkit-transform: rotate(180deg);
+	 position: relative;
+	 top: -80px;
+	 left: -30px;
+	 color: rgba(4,14,22,.83);;
+}
+
+
+#portfolio section:hover .overlay .description > * {
+	display: block;
+}
+
+#portfolio section:hover .overlay .heading {
+	position: absolute;
+	top: -60px;
+	transition: top .9s;
+}
+.links-container {
+	position: absolute;
+	display: flex;
+	gap: 1.2rem;
+	right: 1rem;
+	bottom: 1rem;
+  }
+@media only screen and (max-width: 480px){
+	#portfolio section{
+		width: 90%;
+	}
+
+}

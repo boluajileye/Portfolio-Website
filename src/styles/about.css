@@ -1,0 +1,35 @@
+
+.about{
+    padding: 50px;
+    padding-left: 100px;
+    text-align: center;
+}
+.abt{
+    display: flex;
+    text-align: left;
+}
+.abt .left{
+    width: 50%;
+
+}
+h2{
+    color: blueviolet;
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        line-height: 2;
+        padding: 0 80px;
+    }
+    .abt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .abt .left{
+        width: 100%;
+    }
+}

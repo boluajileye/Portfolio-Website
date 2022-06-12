@@ -1,0 +1,37 @@
+.header {
+    padding-top: 5px;
+    color: #f1f1f1;
+    text-align: center;
+  }
+  .contact{
+    padding-top: 20px;
+}
+.contact .title{
+    text-align: center;
+}
+.card{
+    width: 70%;
+    height: 400px;
+    left: 15%;
+    box-shadow: 0px 10px 20px 10px blueviolet;
+    position: absolute;
+}
+.info{
+  text-align: center;
+  color: blueviolet;
+}
+.cinfo h5{
+  text-align: center;
+  padding: 10px;
+}
+@media only screen and (max-width: 1000px) {
+  
+    .card{
+      width: 300px;
+      height: 500px;
+    }
+    p{
+      width: 80%;
+      padding-left: 70px;
+    }
+}

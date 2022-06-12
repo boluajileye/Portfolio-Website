@@ -1,0 +1,31 @@
+.header{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    .moon, .sun{
+      width: 34px;
+      cursor: pointer;
+      transition: .5s all ease-in-out;
+    }
+    .sun:hover{
+      animation: sun_rotate 1s infinite;
+    }
+    .moon:hover{
+      transform: scale(1.1);
+    }
+    .hide{
+      display: none;
+    }
+  }
+  
+  
+  // Animations
+  
+  @keyframes sun_rotate{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
